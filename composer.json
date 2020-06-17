@@ -1,0 +1,18 @@
+{
+    "name": "svenjuergens/container-bootstrap",
+    "description": "Bootstrap 4 container grid elements for TYPO3 Core based on \"b13/container\" extension.",
+    "type": "typo3-cms-extension",
+    "homepage": "",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "b13/container": "^1.0.0"
+    },
+    "replace": {
+        "typo3-ter/container_bootstrap": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "container_bootstrap"
+        }
+    }
+}

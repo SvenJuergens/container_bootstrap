@@ -1,0 +1,26 @@
+tt_content.bootstrap-2cols-container < lib.contentElement
+tt_content.bootstrap-2cols-container {
+  templateName = 2Cols6-6
+  templateRootPaths.10 = EXT:container_bootstrap/Resources/Private/Templates
+  dataProcessing {
+    201 = B13\Container\DataProcessing\ContainerProcessor
+    201 {
+      colPos = 201
+      as = childrenLeft
+    }
+    202 = B13\Container\DataProcessing\ContainerProcessor
+    202 {
+     colPos = 202
+     as = childrenRight
+    }
+  }
+}
+tt_content.bootstrap-2cols-3-9-container < tt_content.bootstrap-2cols-container
+tt_content.bootstrap-2cols-3-9-container{
+  templateName = 2Cols3-9
+}
+
+tt_content.bootstrap-2cols-9-3-container < tt_content.bootstrap-2cols-container
+tt_content.bootstrap-2cols-9-3-container{
+  templateName = 2Cols9-3
+}
